@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+  color: #e8e8e8;
+}
+
+aside {
+  margin-left: 15px;
+}
+
+.be-less-bright {
+  background-color: #0c0c0c;
+}
+
+#name-place {
+  grid-area: nameplace;
+}
+
+#profession-place {
+  grid-area: profession;
+}
+
+#description-place {
+  grid-area: description;
+}
+#description {
+  width: 100%;
+}
+
+#story-place {
+  grid-area: story;
+}
+#story {
+  width: 100%;
+}
+
+#schedule-place {
+  grid-area: schedule;
+}
+#schedule {
+  width: 100%;
+  height: 95%;
+}
+
+#button-space {
+  grid-area: button;
+}
+
+.form-space {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1em auto auto auto auto auto auto 1em;
+  grid-template-rows: 15% 25% 50% auto;
+  grid-template-areas:
+    "... nameplace profession .........           story  story          story ..."
+    "... description  description   description     story   story    story    ..."
+    "... schedule   schedule   schedule   schedule   schedule   schedule      ..."
+    "... ......    button     .....        ........   ........    ........    ...";
+  grid-gap: 15px;
+}
